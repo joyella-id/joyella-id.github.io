@@ -1,12 +1,16 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import VidyaAndFaishal from "./pages/VidyaAndFaishal/VidyaAndFaishal";
 import "./App.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>default!</div>,
+    element: (
+      <div>
+        <Link to="/test">go to test</Link>
+      </div>
+    ),
   },
   {
     path: "/test",
