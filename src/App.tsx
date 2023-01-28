@@ -1,29 +1,11 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
-import VidyaAndFaishal from "./pages/VidyaAndFaishal/VidyaAndFaishal";
+import React, { useEffect } from "react";
 import "./App.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <div>
-        <Link to="/test">go to test</Link>
-      </div>
-    ),
-  },
-  {
-    path: "/test",
-    element: <div>test</div>,
-  },
-  {
-    path: "/vidyaandfaishal",
-    element: <VidyaAndFaishal />,
-  },
-]);
-
 function App() {
-  return <RouterProvider router={router} />;
+  useEffect(() => {
+    window.location.href = "https://einvite.joyella.id/vidyaandfaishal/";
+  }, []);
+  return <div></div>;
 }
 
 export default App;
