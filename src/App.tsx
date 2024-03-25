@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
-function App() {
+const App:React.FC = () => {
   useEffect(() => {
+    alert('successfully deployed')
     window.location.href = "https://joyella-id.github.io/vidyaandfaishal/";
   }, []);
   return <div></div>;
