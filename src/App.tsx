@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
-    window.location.href = "https://einvite.joyella.id/vidyaandfaishal/";
+    window.location.href = "https://joyella-id.github.io/vidyaandfaishal/";
   }, []);
   return <div></div>;
 }
